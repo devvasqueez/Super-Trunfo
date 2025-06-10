@@ -1,35 +1,33 @@
-# Super-Trunfo
+# Super Trunfo de Cidades 🏙️ — Desafio Nível 2
 
-# Super Trunfo de Cidades — Nível Novato
+Este projeto é a continuação do desafio anterior e implementa a **lógica de comparação entre duas cartas** do jogo Super Trunfo, usando a linguagem C. Aqui, as cartas representam cidades com seus dados populacionais e econômicos.
 
-Este projeto é a primeira etapa do desafio de programação em linguagem C, proposto durante o curso de Ciência da Computação. O objetivo é criar um sistema simples que permita o cadastro e a exibição de duas cartas do jogo Super Trunfo, representando cidades brasileiras.
+## 📌 Funcionalidades
 
-## 🚀 Objetivo do Projeto
+- Cadastro de duas cartas contendo:
+  - Estado (A–H)
+  - Código da Carta (ex: A01)
+  - Nome da Cidade
+  - População (int)
+  - Área em km² (float)
+  - PIB em bilhões de reais (float)
+  - Número de Pontos Turísticos (int)
 
-- Ler e armazenar os dados de duas cidades.
-- Exibir essas informações de forma clara e organizada.
-- Praticar entrada e saída de dados, tipos de variáveis e manipulação de strings em C.
+- Cálculo automático de:
+  - **Densidade Populacional** = População / Área
+  - **PIB per Capita** = (PIB * 1.000.000.000) / População
 
-## 📋 Dados de cada carta
+- Comparação de um atributo fixo (ex: **PIB per Capita**)
+  - Para **PIB, população, área, PIB per capita**: maior valor vence
+  - Para **densidade populacional**: menor valor vence
 
-Cada carta contém as seguintes informações:
-- Estado: uma letra de 'A' a 'H'
-- Código da Carta: ex. A01, B03
-- Nome da Cidade
-- População
-- Área (em km²)
-- PIB (em bilhões de reais)
-- Número de Pontos Turísticos
+- Saída clara com o resultado da comparação e os valores das duas cidades.
 
-## 🧠 Conceitos praticados
+---
 
-- Tipos primitivos: `char`, `int`, `float`, `char[]`
-- Funções básicas de entrada/saída: `printf`, `scanf`
-- Manipulação de strings
-- Organização e legibilidade de código
+## 🖥️ Compilação e Execução
 
-
-### Compilando o programa
+### Compilar
 
 ```bash
-gcc super_trunfo.c -o super_trunfo
+gcc super_trunfo_comparacao.c -o super_trunfo
